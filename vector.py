@@ -12,3 +12,5 @@ class Vector:
     def scalar_mult(self, vector):
         return self.x * vector.x + self.y * vector.y
 
+    def __eq__(self, other):
+        return self.x == other.x and self.y == self.y
