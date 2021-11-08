@@ -4,10 +4,11 @@ class Vector:
         self.y = y
 
     def add(self, vector):
-        pass
+        return Vector(self.x + vector.x, self.y + vector.y)
 
     def subtract(self, vector):
-        pass
+        return Vector(self.x - vector.x, self.y - vector.y)
 
     def scalar_mult(self, vector):
-        pass
+        return self.x * vector.x + self.y * vector.y
+
